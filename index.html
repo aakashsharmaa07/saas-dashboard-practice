@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saas Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="dashboard-card">
+        
+        <header class="dash-header">
+            <h2>User Management</h2>
+            <span id="totalUsers" class="badge">0 Users</span>
+        </header>
+
+
+        <form id="userForm" class="user-form">
+            <input type="text" id="nameInput" placeholder="Full Name..." required autocomplete="off">
+            <input type="email" id="emailInput" placeholder="Email address..." required autocomplete="off">
+            
+            <select id="roleSelect">
+                <option value="User">Standard User</option>
+                <option value="Editor">Editor</option>
+                <option value="Admin">Admin</option>
+            </select>
+
+            <button type="submit" id="addBtn">Create Entity</button>
+        </form>
+
+
+        <div id="userList" class="user-list">
+
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
